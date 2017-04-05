@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>上传梦想秀</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--<link rel="stylesheet" href="__PUBLIC__/assets/css/updream.css" />-->
+	<style>
+	html
+		{
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
+			.dream_form{
+				width:100%;
+				height: 500px;
+				margin-top: 10%;
+				margin-left: 25%;
+				font-family: "???è?ˉé?…é?‘";
+			}
+			table{
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				color: #D2345A;
+				
+			}
+		/*	table td{
+				width:60%;
+				margin: 0;
+				
+			}*/
+			.title{
+				font-size: 24px;
+				color: #000000;
+				font-weight: bold;
+				display: block;
+				margin: auto;
+			}
+			/*.td1{
+				width: 45%;
+			}
+			.td2{
+				width: 10%;
+				}*/
+			.input1{
+				height: 50px;
+				width:50%;
+				-moz-box-shadow: inset 0 0 5px #CCC;
+ 				-webkit-box-shadow: inset 0 0 5px #CCC;
+ 				box-shadow: inset 0 0 5px #CCC;
+ 				border: 1px solid #d9e1e4;
+ 				border-radius: 5px;
+			}
+
+			.input2{
+				height: 250px;
+				width:50%;
+				-moz-box-shadow: inset 0 0 5px #CCC;
+ 				-webkit-box-shadow: inset 0 0 5px #CCC;
+ 				box-shadow: inset 0 0 5px #CCC;
+ 				border: 1px solid #d9e1e4;
+ 				border-radius: 5px;
+			}
+			.input3{
+				height: 50px;
+				width:30%;
+				-moz-box-shadow: inset 0 0 5px #CCC;
+ 				-webkit-box-shadow: inset 0 0 5px #CCC;
+ 				box-shadow: inset 0 0 5px #CCC;
+ 				border: 1px solid #d9e1e4;
+ 				border-radius: 5px;
+			}
+/*			.input{
+				width:40%;
+				height:50px;
+				float:left;
+				margin-left:336px;
+				margin-top:-52px; 
+				-moz-box-shadow: inset 0 0 5px #CCC;
+ 				-webkit-box-shadow: inset 0 0 5px #CCC;
+ 				box-shadow: inset 0 0 5px #CCC;
+ 				border: 1px solid #d9e1e4;
+ 				border-radius: 5px;
+			}*/
+			.file-box{ 
+				position:relative;
+				width:25%;
+				height: 50px;
+				-moz-box-shadow: inset 0 0 5px #CCC;
+ 				-webkit-box-shadow: inset 0 0 5px #CCC;
+ 				box-shadow: inset 0 0 5px #CCC;
+ 				border: 1px solid #d9e1e4;
+ 				border-radius: 5px;
+				
+			} 
+			.txt{ 
+				height:50px; 
+				border:1px solid #cdcdcd; 
+				width:55%;
+				-moz-box-shadow: inset 0 0 5px #CCC;
+ 				-webkit-box-shadow: inset 0 0 5px #CCC;
+ 				box-shadow: inset 0 0 5px #CCC;
+ 				border: 1px solid #d9e1e4;
+ 				border-radius: 5px;
+				} 
+			.file{
+				/*position:absolute;*/
+				top:0; 
+				height:50px; 
+				filter:alpha(opacity:0);
+				opacity: 0;
+				width:100%;
+			} 
+			.file-box1{ 
+				position:relative;
+				width:30%;
+				height: 250px;
+				display: block;
+				float: left;
+				border: 1px solid #d9e1e4;
+				background:url(images/ADD.png) no-repeat 50% 50%;
+				border-radius: 5px;
+			}
+			.file1{
+				position:absolute;
+				top:0; 
+				height:100%; 
+				filter:alpha(opacity:0);
+				opacity: 0;
+				width:100%;
+			} 
+			.submit{
+				width: 100px;
+				height: 40px;
+				font-size: 20px;
+				color: #ffffff;
+				background:#D2345A;
+				border: 0;
+				border-radius: 5px;
+				margin-left: 20px;
+				margin-top: 208px;
+			}
+		@media only screen and (min-width: 375px) and (max-width:412px) {
+			body{overflow-x:hidden;}
+			.dream_form{margin-left:auto;}
+			.title{text-align:center;}
+			/*.file{width: 100px;}*/
+			.input2{width:300px;height: 150px;}
+			.file-box{width:100px;}
+			.dream_form input{width:300px;}
+			.file-box1{width:150px;height:150px;}
+			.submit{width:120px;margin-top:70px;}
+			} 
+		@media only screen and (max-width:360px) {
+		body{overflow-x:hidden;}
+			.dream_form{margin-left:auto;}
+			.title{text-align:center;}
+			.file-box{width: 300px;}
+			.input2{width: 300px;height: 150px;}
+			.dream_form input{width:300px;}
+			.file-box1{width:150px;height:150px;}
+			.submit{width:120px;margin-top:70px;}
+			}
+	@media only screen and (min-width:412px) and (max-width:420px) {
+		body{overflow-x:hidden;}
+			.dream_form{margin-left:auto;}
+			.title{text-align:center;}
+			.file-box{width: 350px;}
+			.input2{width: 350px;height: 150px;}
+			.dream_form input{width:350px;}
+			.file-box1{width:170px;height:170px;}
+			.submit{width:150px;margin-top:90px;}
+		}
+	 @media only screen and (max-width:320px) {
+		body{overflow-x:hidden;}
+			.dream_form{margin-left:auto;}
+			.title{text-align:center;}
+			.file-box{width:250px;}
+			.input2{width: 250px;height: 150px;}
+			.dream_form input{width:250px;}
+			.file-box1{width:150px;height:150px;}
+			.submit{width:100px;margin-top:70px;}
+		}
+		</style>
+	</head>
+
+	<body> 
+		<form class="dream_form" action="{:U('Upload/uploaddo')}" method="post" enctype="multipart/form-data" >
+    		<table >
+			  	<tr>
+		    		<td colspan="3" class="td2"><span class="title">上传梦想</span></td>
+			  	</tr>
+			  	<tr>
+			    	<td>标题</td>
+		 	 	</tr>
+			  	<tr>
+			    	<td><input type="text" class="input3" name="title"  id="title" required/></td>
+			  	</tr>
+			  	<tr>
+			  		<td>上传视频:</td>
+			    </tr>
+			    <tr>
+				  	<td>
+				    	<div class="file-box" style="width:570px;">
+     						<input type="file" name="videofile" class="file" id="fileField" size="28"  placeholder="点击上传本地视频" required/>
+						</div>
+				    </td>
+			    </tr>
+			 	<tr>
+				  	<td>
+				  		<input type="text" class="input1" style="width:30%;" placeholder="文件名称" id="aim" />
+				  	</td>
+			    </tr>
+			    <tr>
+			        <td><span>正文:</span></td>
+			    </tr>
+			    <tr>
+		    		<td><textarea name="introduce" placeholder="字数不超过200" id="article" style="width:29.8%;height:160px;" required></textarea></td>
+			    </tr>
+			    <tr>
+			  	    <td>上传图片:</td>
+			    </tr>
+			    <tr style="margin-bottom: 20px;">
+			  	    <td>
+				    	<div class="file-box1">  
+     						<input type="file" name="imgfile" class="file1"  size="28" id="img" required/>
+     						<div id="photo"></div>
+						</div>
+						<button type="submit" class="submit">确认提交</button>
+			        </td>
+			    </tr>
+			</table> 
+		</form>
+		<!-- Scripts -->
+		<script src="__PUBLIC__/assets/js/jquery.min.js"></script>
+		<script src="__PUBLIC__/assets/js/jquery.dropotron.min.js"></script>
+		<script src="__PUBLIC__/assets/js/skel.min.js"></script>
+		<script src="__PUBLIC__/assets/js/skel-viewport.min.js"></script>
+		<script src="__PUBLIC__/assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="__PUBLIC__/assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="__PUBLIC__/assets/js/main.js"></script>
+		<script type="text/javascript">
+            $(function() {
+                $('#img').change(function() {
+                    var file = this.files[0];
+                    var r = new FileReader();
+                    r.readAsDataURL(file);
+                    $(r).load(function() {
+                        $('#photo').html('<img src="' + this.result + '" alt="" />');
+                    })
+                })
+            })
+            var file = $('#fileField'),
+				aim = $('#aim');
+			file.on('change', function( e ){
+			    //e.currentTarget.files 是一个数组，如果支持多个文件，则需要遍历
+			    var name = e.currentTarget.files[0].name;
+			    aim.val( name );
+			});
+        </script>
+	</body>
+
+</html>
